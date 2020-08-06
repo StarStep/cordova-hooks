@@ -1,17 +1,19 @@
 #!/usr/bin/env node
 
 /* 
+
 This plugin replaces text in a file with the app version from config.xml
+based on: https://gist.github.com/DavidFrahm/2ce16cb6aec90b2c428f
 
-Add to config.xml, src is relative to cordova root folder
-<hook type="after_prepare" src="scripts/appversion.js" />
+1) Add to config.xml, src is relative to cordova root folder
+   <hook type="after_prepare" src="scripts/appversion.js" />
 
-Add to index.html in cordova app, make sure to keep the same exact formatting...
-<script>
-    var APP_VERSION = '0.0.0';
-    var APP_PACKAGE = 'the.app.package';
-    var APP_NAME = 'APP';
-</script>
+2) Add to index.html in cordova app, make sure to keep the same exact formatting...
+   <script>
+       var APP_VERSION = '0.0.0';
+       var APP_PACKAGE = 'the.app.package';
+       var APP_NAME = 'APP';
+   </script>
 
 */
 
